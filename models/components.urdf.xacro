@@ -1,3 +1,4 @@
+<?xml version="1.0"?>
 <!--
  * COPYRIGHT (C) 2010
  * RE2, INC.
@@ -246,9 +247,16 @@
       <inertial>
         <origin xyz="0.00008921 0.00435824 -0.00511217 " />
         <mass value="1.05376019" />
+        <inertia
+          ixx="0.01491672" ixy="0.001506040000000" ixz="0.000017410000000"
+                           iyy="0.002944630000000" iyz="0.000021090000000"
+                                                   izz="0.014829880000000" />
+<!--
+       Gazebo would not load the model in a connected way with these values
         <inertia  ixx="0.00005029" ixy="0.00000020"  ixz="0.00007582"
           iyy="0.00007582"  iyz="-0.00000359"
           izz="0.00006270" />
+-->
       </inertial>
       <visual>
         <material name="WAMGrey">
